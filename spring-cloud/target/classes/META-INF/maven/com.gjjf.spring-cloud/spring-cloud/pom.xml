@@ -37,6 +37,7 @@
         </dependency>
     </dependencies>
 
+
     <!--依赖管理，用于管理spring-cloud的依赖-->
     <dependencyManagement>
         <dependencies>
