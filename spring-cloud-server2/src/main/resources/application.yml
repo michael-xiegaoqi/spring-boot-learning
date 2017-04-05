@@ -1,0 +1,29 @@
+#单例模式启动Eureka Server
+server:
+  port: 8762 #启动端口
+eureka:
+  client:
+    registerWithEureka: false #false:不作为一个客户端注册到注册中心   
+    fetchRegistry: false #为true时，可以启动，但报异常：Cannot execute request on any known server
+    serviceUrl:
+      defaultZone: http://localhost:8762/eureka/ #去哪里注册，eureka服务地址
+zuul:
+  prefix: /techouse #为zuul设置一个公共的前缀
+  #ignoredServices: '*'
+  routes:
+    cloud-client: #随便定义，当不存在serviceId时，默认该值为serviceId（就是注册服务的名称，属性spring.application.name）
+      path: /usersystem/** #匹配/techouse/usersystem/** 均路由到cloud-client
+      serviceId: service-client2 #指定路由到的serviceId
+    service-server:
+            stripPrefix: true
+            path: /api/**
+            serviceId: service-provider2
+    
+ribbon:
+  eureka:
+    enabled: false #配置zuul路由时用将此属性设置为false
+
+cloud-client:
+  ribbon:
+    listOfServers: 127.0.0.1:8064 #为cloud-client服务指定一组服务地址，应该是用于负载均衡
+    
