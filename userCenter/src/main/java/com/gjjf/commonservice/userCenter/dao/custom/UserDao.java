@@ -1,9 +1,9 @@
 package com.gjjf.commonservice.userCenter.dao.custom;
 
-import com.gjjf.commonservice.userCenter.model.User;
+import com.gjjf.commonservice.userCenter.model.UserInfo;
 
 public  interface UserDao {
 	
-	public void insert(User user);
+	public void insert(UserInfo user);
 
 }
