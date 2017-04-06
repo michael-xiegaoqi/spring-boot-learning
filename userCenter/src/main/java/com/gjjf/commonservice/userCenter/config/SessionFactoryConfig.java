@@ -31,17 +31,18 @@ public class SessionFactoryConfig {
     @Autowired
     private DruidConfig druidConfig;
     
-    private DruidDataSource datasource = null;
+    private DataSource datasource = null;
     
     @Bean(destroyMethod = "close")
-	public DataSource dataSource() {		
-		return druidConfig.druidDataSource();
+	public DataSource dataSource() {	
+    	datasource = druidConfig.druidDataSource();
+		return datasource;
 	}
 
     @PreDestroy
     public void close() {
         if(datasource != null){
-            datasource.close();
+            ((DruidDataSource) datasource).close();
         }
     }
 
