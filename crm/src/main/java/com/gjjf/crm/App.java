@@ -1,4 +1,4 @@
-package com.gjjf.spring_cloud.spring_cloud;
+package com.gjjf.crm;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

@@ -2,12 +2,12 @@
   xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
 
-  <groupId>com.gjjf.spring-cloud-server2</groupId>
-  <artifactId>spring-cloud-server2</artifactId>
+  <groupId>com.gjjf.zuul</groupId>
+  <artifactId>spring-cloud-zuul</artifactId>
   <version>0.0.1-SNAPSHOT</version>
   <packaging>jar</packaging>
 
-  <name>spring-cloud-server</name>
+  <name>spring-cloud-zuul</name>
   <url>http://maven.apache.org</url>
 
     <properties>   
@@ -26,6 +26,12 @@
     		<groupId>org.springframework.cloud</groupId>
     		<artifactId>spring-cloud-starter-eureka</artifactId>
 		</dependency>
+        
+        <dependency>
+        	<groupId>com.gjjf</groupId>
+        	<artifactId>framework</artifactId>
+        	<version>0.0.1-SNAPSHOT</version>
+    	</dependency>
         
     </dependencies>
 

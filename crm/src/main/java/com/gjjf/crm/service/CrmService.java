@@ -1,10 +1,10 @@
-package com.gjjf.spring_cloud.spring_cloud.service;
+package com.gjjf.crm.service;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import com.gjjf.crm.client.CrmClient;
 import com.gjjf.framework.rest.Result;
-import com.gjjf.spring_cloud.spring_cloud.client.CrmClient;
 
 @Service
 public class CrmService {

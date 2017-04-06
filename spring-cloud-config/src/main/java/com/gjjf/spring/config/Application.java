@@ -1,4 +1,4 @@
-package com.gjjf.spring_cloud_server.spring_cloud_server;
+package com.gjjf.spring.config;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

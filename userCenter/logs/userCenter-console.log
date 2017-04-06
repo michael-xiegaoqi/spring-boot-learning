@@ -1,0 +1,214 @@
+2017-04-06 09:54:02.489  INFO 99418 --- [main] com.gjjf.commonservice.userCenter.App    : No active profile set, falling back to default profiles: default
+2017-04-06 09:54:02.512  INFO 99418 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@7e5d9a50: startup date [Thu Apr 06 09:54:02 CST 2017]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@193f604a
+2017-04-06 09:54:04.215  WARN 99418 --- [main] o.s.c.a.ConfigurationClassPostProcessor  : Cannot enhance @Configuration bean definition 'refreshScope' since its singleton instance has been created too early. The typical cause is a non-static @Bean method with a BeanDefinitionRegistryPostProcessor return type: Consider declaring such methods as 'static'.
+2017-04-06 09:54:04.591  INFO 99418 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=0a4c3a3c-e020-374e-bf6e-1ab5a1a268cc
+2017-04-06 09:54:04.614  INFO 99418 --- [main] f.a.AutowiredAnnotationBeanPostProcessor : JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2017-04-06 09:54:04.633  INFO 99418 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'app' of type [class com.gjjf.commonservice.userCenter.App$$EnhancerBySpringCGLIB$$87913dac] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-04-06 09:54:04.817  INFO 99418 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [class org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$410e5c0e] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-04-06 09:54:04.886  INFO 99418 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [class org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$5d285f0b] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-04-06 09:54:05.337  INFO 99418 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8061 (http)
+2017-04-06 09:54:05.358  INFO 99418 --- [main] o.apache.catalina.core.StandardService   : Starting service Tomcat
+2017-04-06 09:54:05.359  INFO 99418 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.5
+2017-04-06 09:54:05.598  INFO 99418 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2017-04-06 09:54:05.598  INFO 99418 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 3086 ms
+2017-04-06 09:54:06.096  INFO 99418 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2017-04-06 09:54:06.103  INFO 99418 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'metricsFilter' to: [/*]
+2017-04-06 09:54:06.106  INFO 99418 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2017-04-06 09:54:06.107  INFO 99418 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2017-04-06 09:54:06.107  INFO 99418 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2017-04-06 09:54:06.107  INFO 99418 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2017-04-06 09:54:06.108  INFO 99418 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'webRequestLoggingFilter' to: [/*]
+2017-04-06 09:54:06.115  INFO 99418 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'applicationContextIdFilter' to: [/*]
+2017-04-06 09:54:07.679  INFO 99418 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@7e5d9a50: startup date [Thu Apr 06 09:54:02 CST 2017]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@193f604a
+2017-04-06 09:54:07.875  INFO 99418 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/get],methods=[GET]}" onto public com.gjjf.framework.rest.Result com.gjjf.commonservice.userCenter.web.UserController.get(java.lang.Long)
+2017-04-06 09:54:07.876  INFO 99418 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/insert],methods=[POST]}" onto public com.gjjf.framework.rest.Result com.gjjf.commonservice.userCenter.web.UserController.insert(com.gjjf.userCenter.common.vo.user.UserVO)
+2017-04-06 09:54:07.881  INFO 99418 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2017-04-06 09:54:07.882  INFO 99418 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2017-04-06 09:54:07.938  INFO 99418 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-04-06 09:54:07.938  INFO 99418 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-04-06 09:54:08.043  INFO 99418 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-04-06 09:54:09.109  INFO 99418 --- [main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/info || /info.json],methods=[GET],produces=[application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2017-04-06 09:54:09.111  INFO 99418 --- [main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/archaius || /archaius.json],methods=[GET],produces=[application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2017-04-06 09:54:09.112  INFO 99418 --- [main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/trace || /trace.json],methods=[GET],produces=[application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2017-04-06 09:54:09.113  INFO 99418 --- [main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/configprops || /configprops.json],methods=[GET],produces=[application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2017-04-06 09:54:09.114  INFO 99418 --- [main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/logfile || /logfile.json],methods=[GET || HEAD]}" onto public void org.springframework.boot.actuate.endpoint.mvc.LogFileMvcEndpoint.invoke(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) throws javax.servlet.ServletException,java.io.IOException
+2017-04-06 09:54:09.116  INFO 99418 --- [main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/env/{name:.*}],methods=[GET],produces=[application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EnvironmentMvcEndpoint.value(java.lang.String)
+2017-04-06 09:54:09.117  INFO 99418 --- [main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/env || /env.json],methods=[GET],produces=[application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2017-04-06 09:54:09.118  INFO 99418 --- [main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/env],methods=[POST]}" onto public java.lang.Object org.springframework.cloud.context.environment.EnvironmentManagerMvcEndpoint.value(java.util.Map<java.lang.String, java.lang.String>)
+2017-04-06 09:54:09.118  INFO 99418 --- [main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/env/reset],methods=[POST]}" onto public java.util.Map<java.lang.String, java.lang.Object> org.springframework.cloud.context.environment.EnvironmentManagerMvcEndpoint.reset()
+2017-04-06 09:54:09.119  INFO 99418 --- [main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/resume || /resume.json],methods=[POST]}" onto public java.lang.Object org.springframework.cloud.endpoint.GenericPostableMvcEndpoint.invoke()
+2017-04-06 09:54:09.120  INFO 99418 --- [main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/restart || /restart.json],methods=[POST]}" onto public java.lang.Object org.springframework.cloud.context.restart.RestartMvcEndpoint.invoke()
+2017-04-06 09:54:09.121  INFO 99418 --- [main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/heapdump || /heapdump.json],methods=[GET],produces=[application/octet-stream]}" onto public void org.springframework.boot.actuate.endpoint.mvc.HeapdumpMvcEndpoint.invoke(boolean,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) throws java.io.IOException,javax.servlet.ServletException
+2017-04-06 09:54:09.124  INFO 99418 --- [main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/pause || /pause.json],methods=[POST]}" onto public java.lang.Object org.springframework.cloud.endpoint.GenericPostableMvcEndpoint.invoke()
+2017-04-06 09:54:09.125  INFO 99418 --- [main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/mappings || /mappings.json],methods=[GET],produces=[application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2017-04-06 09:54:09.126  INFO 99418 --- [main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/refresh || /refresh.json],methods=[POST]}" onto public java.lang.Object org.springframework.cloud.endpoint.GenericPostableMvcEndpoint.invoke()
+2017-04-06 09:54:09.129  INFO 99418 --- [main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/beans || /beans.json],methods=[GET],produces=[application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2017-04-06 09:54:09.133  INFO 99418 --- [main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/autoconfig || /autoconfig.json],methods=[GET],produces=[application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2017-04-06 09:54:09.134  INFO 99418 --- [main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/health || /health.json],produces=[application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.HealthMvcEndpoint.invoke(java.security.Principal)
+2017-04-06 09:54:09.136  INFO 99418 --- [main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/metrics/{name:.*}],methods=[GET],produces=[application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.MetricsMvcEndpoint.value(java.lang.String)
+2017-04-06 09:54:09.136  INFO 99418 --- [main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/metrics || /metrics.json],methods=[GET],produces=[application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2017-04-06 09:54:09.137  INFO 99418 --- [main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/dump || /dump.json],methods=[GET],produces=[application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2017-04-06 09:54:09.138  INFO 99418 --- [main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/features || /features.json],methods=[GET],produces=[application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2017-04-06 09:54:09.404  INFO 99418 --- [main] o.s.ui.freemarker.SpringTemplateLoader   : SpringTemplateLoader for FreeMarker: using resource loader [org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@7e5d9a50: startup date [Thu Apr 06 09:54:02 CST 2017]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@193f604a] and template loader path [classpath:/templates/]
+2017-04-06 09:54:09.406  INFO 99418 --- [main] o.s.w.s.v.f.FreeMarkerConfigurer         : ClassTemplateLoader for Spring macros added to FreeMarker configuration
+2017-04-06 09:54:09.682  WARN 99418 --- [main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2017-04-06 09:54:09.683  INFO 99418 --- [main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2017-04-06 09:54:09.694  WARN 99418 --- [main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2017-04-06 09:54:09.695  INFO 99418 --- [main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2017-04-06 09:54:09.830  INFO 99418 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2017-04-06 09:54:09.845  INFO 99418 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'refreshScope' has been autodetected for JMX exposure
+2017-04-06 09:54:09.846  INFO 99418 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'environmentManager' has been autodetected for JMX exposure
+2017-04-06 09:54:09.849  INFO 99418 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'configurationPropertiesRebinder' has been autodetected for JMX exposure
+2017-04-06 09:54:09.851  INFO 99418 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'refreshEndpoint' has been autodetected for JMX exposure
+2017-04-06 09:54:09.852  INFO 99418 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'restartEndpoint' has been autodetected for JMX exposure
+2017-04-06 09:54:09.855  INFO 99418 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Located managed bean 'environmentManager': registering with JMX server as MBean [org.springframework.cloud.context.environment:name=environmentManager,type=EnvironmentManager]
+2017-04-06 09:54:09.877  INFO 99418 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Located managed bean 'restartEndpoint': registering with JMX server as MBean [org.springframework.cloud.context.restart:name=restartEndpoint,type=RestartEndpoint]
+2017-04-06 09:54:09.892  INFO 99418 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Located managed bean 'refreshScope': registering with JMX server as MBean [org.springframework.cloud.context.scope.refresh:name=refreshScope,type=RefreshScope]
+2017-04-06 09:54:09.912  INFO 99418 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Located managed bean 'configurationPropertiesRebinder': registering with JMX server as MBean [org.springframework.cloud.context.properties:name=configurationPropertiesRebinder,context=7e5d9a50,type=ConfigurationPropertiesRebinder]
+2017-04-06 09:54:09.924  INFO 99418 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Located managed bean 'refreshEndpoint': registering with JMX server as MBean [org.springframework.cloud.endpoint:name=refreshEndpoint,type=RefreshEndpoint]
+2017-04-06 09:54:10.303  INFO 99418 --- [main] o.s.c.support.DefaultLifecycleProcessor  : Starting beans in phase 0
+2017-04-06 09:54:10.313  INFO 99418 --- [main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2017-04-06 09:54:10.687  INFO 99418 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON encoding codec LegacyJacksonJson
+2017-04-06 09:54:10.690  INFO 99418 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON decoding codec LegacyJacksonJson
+2017-04-06 09:54:10.870  INFO 99418 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML encoding codec XStreamXml
+2017-04-06 09:54:10.871  INFO 99418 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML decoding codec XStreamXml
+2017-04-06 09:54:11.285  INFO 99418 --- [main] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2017-04-06 09:54:11.320  INFO 99418 --- [main] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2017-04-06 09:54:11.320  INFO 99418 --- [main] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2017-04-06 09:54:11.320  INFO 99418 --- [main] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2017-04-06 09:54:11.321  INFO 99418 --- [main] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2017-04-06 09:54:11.321  INFO 99418 --- [main] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2017-04-06 09:54:11.321  INFO 99418 --- [main] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2017-04-06 09:54:11.321  INFO 99418 --- [main] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2017-04-06 09:54:11.755  INFO 99418 --- [main] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2017-04-06 09:54:11.757  INFO 99418 --- [main] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2017-04-06 09:54:11.762  INFO 99418 --- [main] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2017-04-06 09:54:11.766  INFO 99418 --- [main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1491443651766 with initial instances count: 0
+2017-04-06 09:54:11.839  INFO 99418 --- [main] c.n.e.EurekaDiscoveryClientConfiguration : Registering application userCenter with eureka with status UP
+2017-04-06 09:54:11.841  INFO 99418 --- [main] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1491443651841, current=UP, previous=STARTING]
+2017-04-06 09:54:11.844  INFO 99418 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_USERCENTER/192.168.1.224:userCenter:8061: registering service...
+2017-04-06 09:54:12.179  INFO 99418 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_USERCENTER/192.168.1.224:userCenter:8061 - registration status: 204
+2017-04-06 09:54:12.252  INFO 99418 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8061 (http)
+2017-04-06 09:54:12.253  INFO 99418 --- [main] c.n.e.EurekaDiscoveryClientConfiguration : Updating port to 8061
+2017-04-06 09:54:12.260  INFO 99418 --- [main] com.gjjf.commonservice.userCenter.App    : Started App in 12.005 seconds (JVM running for 12.996)
+2017-04-06 09:54:41.764  INFO 99418 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2017-04-06 09:54:41.764  INFO 99418 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2017-04-06 09:54:41.764  INFO 99418 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2017-04-06 09:54:41.764  INFO 99418 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2017-04-06 09:54:41.764  INFO 99418 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2017-04-06 09:54:41.764  INFO 99418 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Application version is -1: false
+2017-04-06 09:54:41.764  INFO 99418 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2017-04-06 09:54:41.808  INFO 99418 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2017-04-06 09:59:11.335  INFO 99418 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2017-04-06 10:04:11.364  INFO 99418 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2017-04-06 10:09:11.401  INFO 99418 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2017-04-06 10:14:11.447  INFO 99418 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2017-04-06 10:19:11.493  INFO 99418 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2017-04-06 10:24:11.544  INFO 99418 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2017-04-06 10:29:11.615  INFO 99418 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2017-04-06 10:34:11.637  INFO 99418 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2017-04-06 10:35:25.796  INFO 99418 --- [http-nio-8061-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2017-04-06 10:35:25.824  INFO 99418 --- [http-nio-8061-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2017-04-06 10:35:25.931  INFO 99418 --- [http-nio-8061-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 106 ms
+2017-04-06 10:37:31.357  INFO 99418 --- [RMI TCP Connection(2)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2017-04-06 10:37:31.375  INFO 99418 --- [RMI TCP Connection(2)-127.0.0.1] ationConfigEmbeddedWebApplicationContext : Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@7e5d9a50: startup date [Thu Apr 06 09:54:02 CST 2017]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@193f604a
+2017-04-06 10:37:31.377  INFO 99418 --- [RMI TCP Connection(2)-127.0.0.1] c.n.e.EurekaDiscoveryClientConfiguration : Unregistering application userCenter with eureka with status DOWN
+2017-04-06 10:37:31.377  WARN 99418 --- [RMI TCP Connection(2)-127.0.0.1] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1491446251377, current=DOWN, previous=UP]
+2017-04-06 10:37:31.378  INFO 99418 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_USERCENTER/192.168.1.224:userCenter:8061: registering service...
+2017-04-06 10:37:31.378  INFO 99418 --- [RMI TCP Connection(2)-127.0.0.1] com.netflix.discovery.DiscoveryClient    : Shutting down DiscoveryClient ...
+2017-04-06 10:37:31.379  INFO 99418 --- [RMI TCP Connection(2)-127.0.0.1] com.netflix.discovery.DiscoveryClient    : Unregistering ...
+2017-04-06 10:37:31.389  INFO 99418 --- [RMI TCP Connection(2)-127.0.0.1] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_USERCENTER/192.168.1.224:userCenter:8061 - deregister  status: 200
+2017-04-06 10:37:31.393  INFO 99418 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_USERCENTER/192.168.1.224:userCenter:8061 - registration status: 204
+2017-04-06 10:37:31.394  INFO 99418 --- [RMI TCP Connection(2)-127.0.0.1] com.netflix.discovery.DiscoveryClient    : Completed shut down of DiscoveryClient
+2017-04-06 10:37:31.397  INFO 99418 --- [RMI TCP Connection(2)-127.0.0.1] o.s.c.support.DefaultLifecycleProcessor  : Stopping beans in phase 0
+2017-04-06 10:37:31.416  INFO 99418 --- [RMI TCP Connection(2)-127.0.0.1] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2017-04-06 10:37:31.417  INFO 99418 --- [RMI TCP Connection(2)-127.0.0.1] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans
+2017-04-06 10:37:31.483  INFO 99418 --- [RMI TCP Connection(2)-127.0.0.1] o.apache.catalina.core.StandardService   : Stopping service Tomcat
+2017-04-06 10:37:31.500  INFO 99418 --- [localhost-startStop-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Destroying Spring FrameworkServlet 'dispatcherServlet'
+2017-04-06 16:01:00.380  INFO 21876 --- [main] com.gjjf.commonservice.userCenter.App    : No active profile set, falling back to default profiles: default
+2017-04-06 16:01:00.431  INFO 21876 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@7e5d9a50: startup date [Thu Apr 06 16:01:00 CST 2017]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@193f604a
+2017-04-06 16:01:02.229  WARN 21876 --- [main] o.s.c.a.ConfigurationClassPostProcessor  : Cannot enhance @Configuration bean definition 'refreshScope' since its singleton instance has been created too early. The typical cause is a non-static @Bean method with a BeanDefinitionRegistryPostProcessor return type: Consider declaring such methods as 'static'.
+2017-04-06 16:01:02.538  INFO 21876 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=0a4c3a3c-e020-374e-bf6e-1ab5a1a268cc
+2017-04-06 16:01:02.565  INFO 21876 --- [main] f.a.AutowiredAnnotationBeanPostProcessor : JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2017-04-06 16:01:02.586  INFO 21876 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'app' of type [class com.gjjf.commonservice.userCenter.App$$EnhancerBySpringCGLIB$$87913dac] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-04-06 16:01:02.789  INFO 21876 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [class org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$410e5c0e] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-04-06 16:01:02.854  INFO 21876 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [class org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$5d285f0b] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-04-06 16:01:03.342  INFO 21876 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8061 (http)
+2017-04-06 16:01:03.364  INFO 21876 --- [main] o.apache.catalina.core.StandardService   : Starting service Tomcat
+2017-04-06 16:01:03.366  INFO 21876 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.5
+2017-04-06 16:01:03.652  INFO 21876 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2017-04-06 16:01:03.653  INFO 21876 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 3223 ms
+2017-04-06 16:01:04.178  INFO 21876 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2017-04-06 16:01:04.187  INFO 21876 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'metricsFilter' to: [/*]
+2017-04-06 16:01:04.188  INFO 21876 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2017-04-06 16:01:04.188  INFO 21876 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2017-04-06 16:01:04.188  INFO 21876 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2017-04-06 16:01:04.188  INFO 21876 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2017-04-06 16:01:04.189  INFO 21876 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'webRequestLoggingFilter' to: [/*]
+2017-04-06 16:01:04.189  INFO 21876 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'applicationContextIdFilter' to: [/*]
+2017-04-06 16:01:04.395  WARN 21876 --- [main] ationConfigEmbeddedWebApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'userService': Unsatisfied dependency expressed through field 'userMapper'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'userMapper' defined in file [/Users/henser/project/code/git/spring-boot-learning/userCenter/target/classes/com/gjjf/commonservice/userCenter/dao/autocode/UserMapper.class]: Unsatisfied dependency expressed through bean property 'sqlSessionFactory'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'sqlSessionFactory' defined in class path resource [org/mybatis/spring/boot/autoconfigure/MybatisAutoConfiguration.class]: Unsatisfied dependency expressed through method 'sqlSessionFactory' parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSource' defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Tomcat.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.apache.tomcat.jdbc.pool.DataSource]: Factory method 'dataSource' threw exception; nested exception is org.springframework.boot.autoconfigure.jdbc.DataSourceProperties$DataSourceBeanCreationException: Cannot determine embedded database driver class for database type NONE. If you want an embedded database please put a supported one on the classpath. If you have database settings to be loaded from a particular profile you may need to active it (no profiles are currently active).
+2017-04-06 16:01:04.398  INFO 21876 --- [main] o.apache.catalina.core.StandardService   : Stopping service Tomcat
+2017-04-06 16:01:04.439  INFO 21876 --- [main] utoConfigurationReportLoggingInitializer : 
+
+Error starting ApplicationContext. To display the auto-configuration report re-run your application with 'debug' enabled.
+2017-04-06 16:01:04.445 ERROR 21876 --- [main] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Cannot determine embedded database driver class for database type NONE
+
+Action:
+
+If you want an embedded database please put a supported one on the classpath. If you have database settings to be loaded from a particular profile you may need to active it (no profiles are currently active).
+
+2017-04-06 18:08:51.524  INFO 29548 --- [main] c.c.c.ConfigServicePropertySourceLocator : Fetching config from server at: http://localhost:7001/
+2017-04-06 18:08:52.236  INFO 29548 --- [main] c.c.c.ConfigServicePropertySourceLocator : Located environment: name=userCenter, profiles=[dev], label=data, version=null, state=null
+2017-04-06 18:08:52.237  INFO 29548 --- [main] b.c.PropertySourceBootstrapConfiguration : Located property source: CompositePropertySource [name='configService', propertySources=[]]
+2017-04-06 18:08:52.401  INFO 29548 --- [main] com.gjjf.commonservice.userCenter.App    : No active profile set, falling back to default profiles: default
+2017-04-06 18:08:52.429  INFO 29548 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@6f0b0a5e: startup date [Thu Apr 06 18:08:52 CST 2017]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@6da21078
+2017-04-06 18:08:54.437  INFO 29548 --- [main] o.s.b.f.s.DefaultListableBeanFactory     : Overriding bean definition for bean 'dataSource' with a different definition: replacing [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=mybatisDataSource; factoryMethodName=dataSource; initMethodName=null; destroyMethodName=close; defined in class path resource [com/gjjf/commonservice/userCenter/config/MybatisDataSource.class]] with [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=sessionFactoryConfig; factoryMethodName=dataSource; initMethodName=null; destroyMethodName=close; defined in class path resource [com/gjjf/commonservice/userCenter/config/SessionFactoryConfig.class]]
+2017-04-06 18:08:54.438  INFO 29548 --- [main] o.s.b.f.s.DefaultListableBeanFactory     : Overriding bean definition for bean 'sqlSessionFactoryBean' with a different definition: replacing [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=mybatisDataSource; factoryMethodName=sqlSessionFactoryBean; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [com/gjjf/commonservice/userCenter/config/MybatisDataSource.class]] with [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=sessionFactoryConfig; factoryMethodName=sqlSessionFactoryBean; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [com/gjjf/commonservice/userCenter/config/SessionFactoryConfig.class]]
+2017-04-06 18:08:54.439  INFO 29548 --- [main] o.s.b.f.s.DefaultListableBeanFactory     : Overriding bean definition for bean 'transactionManager' with a different definition: replacing [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=mybatisDataSource; factoryMethodName=transactionManager; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [com/gjjf/commonservice/userCenter/config/MybatisDataSource.class]] with [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=sessionFactoryConfig; factoryMethodName=transactionManager; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [com/gjjf/commonservice/userCenter/config/SessionFactoryConfig.class]]
+2017-04-06 18:08:54.443  WARN 29548 --- [main] o.m.s.mapper.ClassPathMapperScanner      : Skipping MapperFactoryBean with name 'userMapper' and 'com.gjjf.commonservice.userCenter.dao.autocode.UserMapper' mapperInterface. Bean already defined with the same name!
+2017-04-06 18:08:54.443  WARN 29548 --- [main] o.m.s.mapper.ClassPathMapperScanner      : Skipping MapperFactoryBean with name 'userDao' and 'com.gjjf.commonservice.userCenter.dao.custom.UserDao' mapperInterface. Bean already defined with the same name!
+2017-04-06 18:08:54.443  WARN 29548 --- [main] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.gjjf.commonservice.userCenter.dao]' package. Please check your configuration.
+2017-04-06 18:08:54.496 ERROR 29548 --- [main] o.s.boot.SpringApplication               : Application startup failed
+
+java.lang.IllegalArgumentException: No ConfigurationProperties annotation found on  'com.gjjf.commonservice.userCenter.config.DruidConfig'.
+	at org.springframework.util.Assert.notNull(Assert.java:115) ~[spring-core-4.3.3.RELEASE.jar:4.3.3.RELEASE]
+	at org.springframework.boot.context.properties.EnableConfigurationPropertiesImportSelector$ConfigurationPropertiesBeanRegistrar.registerBeanDefinition(EnableConfigurationPropertiesImportSelector.java:117) ~[spring-boot-1.4.1.RELEASE.jar:1.4.1.RELEASE]
+	at org.springframework.boot.context.properties.EnableConfigurationPropertiesImportSelector$ConfigurationPropertiesBeanRegistrar.registerBeanDefinitions(EnableConfigurationPropertiesImportSelector.java:82) ~[spring-boot-1.4.1.RELEASE.jar:1.4.1.RELEASE]
+	at org.springframework.context.annotation.ConfigurationClassBeanDefinitionReader.loadBeanDefinitionsFromRegistrars(ConfigurationClassBeanDefinitionReader.java:352) ~[spring-context-4.3.3.RELEASE.jar:4.3.3.RELEASE]
+	at org.springframework.context.annotation.ConfigurationClassBeanDefinitionReader.loadBeanDefinitionsForConfigurationClass(ConfigurationClassBeanDefinitionReader.java:143) ~[spring-context-4.3.3.RELEASE.jar:4.3.3.RELEASE]
+	at org.springframework.context.annotation.ConfigurationClassBeanDefinitionReader.loadBeanDefinitions(ConfigurationClassBeanDefinitionReader.java:116) ~[spring-context-4.3.3.RELEASE.jar:4.3.3.RELEASE]
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.processConfigBeanDefinitions(ConfigurationClassPostProcessor.java:336) ~[spring-context-4.3.3.RELEASE.jar:4.3.3.RELEASE]
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.postProcessBeanDefinitionRegistry(ConfigurationClassPostProcessor.java:246) ~[spring-context-4.3.3.RELEASE.jar:4.3.3.RELEASE]
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanDefinitionRegistryPostProcessors(PostProcessorRegistrationDelegate.java:273) ~[spring-context-4.3.3.RELEASE.jar:4.3.3.RELEASE]
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanFactoryPostProcessors(PostProcessorRegistrationDelegate.java:98) ~[spring-context-4.3.3.RELEASE.jar:4.3.3.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.invokeBeanFactoryPostProcessors(AbstractApplicationContext.java:681) ~[spring-context-4.3.3.RELEASE.jar:4.3.3.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:523) ~[spring-context-4.3.3.RELEASE.jar:4.3.3.RELEASE]
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.refresh(EmbeddedWebApplicationContext.java:122) ~[spring-boot-1.4.1.RELEASE.jar:1.4.1.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:761) [spring-boot-1.4.1.RELEASE.jar:1.4.1.RELEASE]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:371) [spring-boot-1.4.1.RELEASE.jar:1.4.1.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315) [spring-boot-1.4.1.RELEASE.jar:1.4.1.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1186) [spring-boot-1.4.1.RELEASE.jar:1.4.1.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1175) [spring-boot-1.4.1.RELEASE.jar:1.4.1.RELEASE]
+	at com.gjjf.commonservice.userCenter.App.main(App.java:14) [classes/:na]
+
+2017-04-06 18:08:54.499  INFO 29548 --- [main] ationConfigEmbeddedWebApplicationContext : Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@6f0b0a5e: startup date [Thu Apr 06 18:08:52 CST 2017]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@6da21078
+2017-04-06 18:08:54.500  WARN 29548 --- [main] ationConfigEmbeddedWebApplicationContext : Exception thrown from LifecycleProcessor on context close
+
+java.lang.IllegalStateException: LifecycleProcessor not initialized - call 'refresh' before invoking lifecycle methods via the context: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@6f0b0a5e: startup date [Thu Apr 06 18:08:52 CST 2017]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@6da21078
+	at org.springframework.context.support.AbstractApplicationContext.getLifecycleProcessor(AbstractApplicationContext.java:416) [spring-context-4.3.3.RELEASE.jar:4.3.3.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.doClose(AbstractApplicationContext.java:997) [spring-context-4.3.3.RELEASE.jar:4.3.3.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.close(AbstractApplicationContext.java:956) [spring-context-4.3.3.RELEASE.jar:4.3.3.RELEASE]
+	at org.springframework.boot.SpringApplication.handleRunFailure(SpringApplication.java:818) [spring-boot-1.4.1.RELEASE.jar:1.4.1.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:326) [spring-boot-1.4.1.RELEASE.jar:1.4.1.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1186) [spring-boot-1.4.1.RELEASE.jar:1.4.1.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1175) [spring-boot-1.4.1.RELEASE.jar:1.4.1.RELEASE]
+	at com.gjjf.commonservice.userCenter.App.main(App.java:14) [classes/:na]
+
