@@ -4,14 +4,14 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.amqp.core.AmqpTemplate;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Service;
+import org.springframework.stereotype.Component;
 
 /**
  * 消息发送
  * @author henser
  *
  */
-@Service
+@Component
 public class UserSender {
 	
 	private Logger logger = LoggerFactory.getLogger(getClass());
