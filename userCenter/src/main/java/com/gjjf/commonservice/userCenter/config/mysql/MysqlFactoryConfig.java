@@ -1,4 +1,4 @@
-package com.gjjf.commonservice.userCenter.config;
+package com.gjjf.commonservice.userCenter.config.mysql;
 
 import javax.annotation.PreDestroy;
 import javax.sql.DataSource;
@@ -19,17 +19,18 @@ import com.alibaba.druid.pool.DruidDataSource;
 
 @Configuration
 @MapperScan("com.gjjf.commonservice.userCenter.dao")
-@EnableConfigurationProperties(DruidConfig.class)
+@EnableConfigurationProperties(MysqlConfig.class)
 @EnableTransactionManagement
-public class SessionFactoryConfig {
+public class MysqlFactoryConfig {
 
 	// mybaits mapper xml搜索路径
     private final static String MAPPERLOCATIONS = "classpath:/mybatis/*/*.xml";
     
+    // 数据库实体类的路径
     private String typeAliasPackage = "com.gjjf.commonservice.userCenter.model";
 
     @Autowired
-    private DruidConfig druidConfig;
+    private MysqlConfig druidConfig;
     
     private DataSource datasource = null;
     

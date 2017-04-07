@@ -1,4 +1,4 @@
-package com.gjjf.commonservice.userCenter.config;
+package com.gjjf.commonservice.userCenter.config.mysql;
 
 import java.sql.SQLException;
 
@@ -20,8 +20,8 @@ import com.alibaba.druid.pool.DruidDataSource;
  *
  */
 @Configuration
-@ConfigurationProperties(prefix = DruidConfig.PREFIX, ignoreUnknownFields = false)
-public class DruidConfig {
+@ConfigurationProperties(prefix = MysqlConfig.PREFIX, ignoreUnknownFields = false)
+public class MysqlConfig {
 	
 	private Logger logger = LoggerFactory.getLogger(getClass());
 	

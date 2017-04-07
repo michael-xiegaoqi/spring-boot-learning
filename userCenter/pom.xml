@@ -83,6 +83,11 @@
 			<version>1.0.18</version>
 		</dependency>
     	
+    	<dependency>  
+    		<groupId>org.springframework.boot</groupId>  
+    		<artifactId>spring-boot-starter-redis</artifactId>  
+		</dependency>  
+    	
     </dependencies>
 
    	<!--依赖管理，用于管理spring-cloud的依赖-->
