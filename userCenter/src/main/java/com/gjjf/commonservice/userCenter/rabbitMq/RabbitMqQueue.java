@@ -28,9 +28,17 @@ public class RabbitMqQueue {
 	@Bean
 	public Queue userCenterQueue() {
 		
-		logger.info("消息队列的名称:{}",userCenter_queue);
+		logger.info("会员中心消息队列的名称:{}",userCenter_queue);
 		
 		return new Queue(userCenter_queue);
+	}
+	
+	@Bean
+	public Queue userInfoQueue() {
+		
+		logger.info("会员信息消息队列的名称:{}","userInfo");
+		
+		return new Queue("userInfo");
 	}
 	
 }

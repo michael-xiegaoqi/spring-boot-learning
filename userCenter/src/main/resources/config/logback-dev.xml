@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<configuration DEBUG="false">
+<configuration INFO="false">
 	<!-- sends logs to logback-beagle>
 	<consolePlugin / -->
 	<!-- set the logging path -->
@@ -30,13 +30,13 @@
 		</encoder>
 	</appender>
 	<!-- File Appender -->
-	<appender name="WEB_DEBUG" class="ch.qos.logback.core.rolling.RollingFileAppender">
+	<appender name="WEB_INFO" class="ch.qos.logback.core.rolling.RollingFileAppender">
 		<filter class="ch.qos.logback.classic.filter.ThresholdFilter">
-			<level>DEBUG</level>
+			<level>INFO</level>
 		</filter>
-		<file>${LOG_HOME}/DEBUG.log</file>
+		<file>${LOG_HOME}/INFO.log</file>
 		<rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
-			<fileNamePattern>${LOG_HOME}/DEBUG.%d{yyyyMMdd}.%d{yyyyMMdd}.log</fileNamePattern>
+			<fileNamePattern>${LOG_HOME}/INFO.%d{yyyyMMdd}.%d{yyyyMMdd}.log</fileNamePattern>
 			<maxHistory>7</maxHistory>
 		</rollingPolicy>
 		<encoder>
@@ -58,65 +58,65 @@
 		</encoder>
 	</appender>
 
-	<logger name="com.lsmy" level="DEBUG" additivity="false">
+	<logger name="com.lsmy" level="INFO" additivity="false">
 		<appender-ref ref="STDOUT" />
-		<appender-ref ref="WEB_DEBUG" />
+		<appender-ref ref="WEB_INFO" />
 		<appender-ref ref="WEB_ERROR" />
 	</logger>
-	<logger name="com.jolbox.bonecp" level="DEBUG" additivity="false">
+	<logger name="com.jolbox.bonecp" level="INFO" additivity="false">
 		<appender-ref ref="STDOUT" />
-		<appender-ref ref="WEB_DEBUG" />
+		<appender-ref ref="WEB_INFO" />
 	</logger>
-	<logger name="com.google" level="DEBUG" additivity="false">
+	<logger name="com.google" level="INFO" additivity="false">
 		<appender-ref ref="STDOUT" />
-		<appender-ref ref="WEB_DEBUG" />
+		<appender-ref ref="WEB_INFO" />
 	</logger>
-	<logger name="javax" level="DEBUG" additivity="false">
+	<logger name="javax" level="INFO" additivity="false">
 		<appender-ref ref="STDOUT" />
-		<appender-ref ref="WEB_DEBUG" />
+		<appender-ref ref="WEB_INFO" />
 	</logger>
-	<logger name="java" level="DEBUG" additivity="false">
+	<logger name="java" level="INFO" additivity="false">
 		<appender-ref ref="STDOUT" />
-		<appender-ref ref="WEB_DEBUG" />
+		<appender-ref ref="WEB_INFO" />
 	</logger>
-	<logger name="org.springframework" level="DEBUG" additivity="false">
+	<logger name="org.springframework" level="INFO" additivity="false">
 		<appender-ref ref="STDOUT" />
-		<appender-ref ref="WEB_DEBUG" />
+		<appender-ref ref="WEB_INFO" />
 	</logger>
-	<logger name="org.springframework.web.servlet.handler.AbstractHandlerExceptionResolve" level="DEBUG" additivity="false">
+	<logger name="org.springframework.web.servlet.handler.AbstractHandlerExceptionResolve" level="INFO" additivity="false">
 		<appender-ref ref="STDOUT" />
-		<appender-ref ref="WEB_DEBUG" />
+		<appender-ref ref="WEB_INFO" />
 	</logger>
-	<logger name="org.springframework.web.servlet.FrameworkServlet" level="DEBUG" additivity="false">
+	<logger name="org.springframework.web.servlet.FrameworkServlet" level="INFO" additivity="false">
 		<appender-ref ref="STDOUT" />
-		<appender-ref ref="WEB_DEBUG" />
+		<appender-ref ref="WEB_INFO" />
 	</logger>
-	<logger name="org.mybatis" level="DEBUG" additivity="false">
+	<logger name="org.mybatis" level="INFO" additivity="false">
 		<appender-ref ref="STDOUT" />
-		<appender-ref ref="WEB_DEBUG" />
+		<appender-ref ref="WEB_INFO" />
 	</logger>
-	<logger name="org.ibatis" level="DEBUG" additivity="false">
+	<logger name="org.ibatis" level="INFO" additivity="false">
 		<appender-ref ref="STDOUT" />
-		<appender-ref ref="WEB_DEBUG" />
+		<appender-ref ref="WEB_INFO" />
 	</logger>
-	<logger name="org.apache.ibatis" level="DEBUG" additivity="false">
+	<logger name="org.apache.ibatis" level="INFO" additivity="false">
 		<appender-ref ref="STDOUT" />
-		<appender-ref ref="WEB_DEBUG" />
+		<appender-ref ref="WEB_INFO" />
 	</logger>
-	<logger name="org.apache" level="DEBUG" additivity="false">
+	<logger name="org.apache" level="INFO" additivity="false">
 		<appender-ref ref="STDOUT" />
-		<appender-ref ref="WEB_DEBUG" />
+		<appender-ref ref="WEB_INFO" />
 	</logger>
-	<logger name="net.sf" level="DEBUG" additivity="false">
+	<logger name="net.sf" level="INFO" additivity="false">
 		<appender-ref ref="STDOUT" />
-		<appender-ref ref="WEB_DEBUG" />
+		<appender-ref ref="WEB_INFO" />
 	</logger>
-	<logger name="redis.clients" level="DEBUG" additivity="false">
+	<logger name="redis.clients" level="INFO" additivity="false">
 		<appender-ref ref="STDOUT" />
-		<appender-ref ref="WEB_DEBUG" />
+		<appender-ref ref="WEB_INFO" />
 	</logger>
-	<root level="DEBUG">
+	<root level="INFO">
 		<appender-ref ref="STDOUT" />
-		<appender-ref ref="WEB_DEBUG" />
+		<appender-ref ref="WEB_INFO" />
 	</root>
 </configuration>
