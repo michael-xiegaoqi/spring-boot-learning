@@ -6,6 +6,7 @@ import org.springframework.transaction.annotation.Transactional;
 
 import com.gjjf.commonservice.userCenter.dao.autocode.UserMapper;
 import com.gjjf.commonservice.userCenter.model.User;
+import com.gjjf.commonservice.userCenter.redis.UserRedisDao;
 import com.gjjf.userCenter.common.vo.user.UserVO;
 
 @Service
@@ -15,6 +16,9 @@ public class UserService {
 	@Autowired
 	private UserMapper userMapper;
 	
+	@Autowired
+	private UserRedisDao userRedisDao;
+	
 	public void insert(UserVO vo){
 		
 		
@@ -22,7 +26,17 @@ public class UserService {
 	
 	public User get(Long id) {
 		
-		return userMapper.getUserById(id);
+		User user = userRedisDao.getUser(id);
+				
+		if(user != null) {
+			return user;
+		}
+		
+		user = userMapper.getUserById(id);
+		
+		userRedisDao.saveUser(user);
+		
+		return user;
 		
 	}
 	
