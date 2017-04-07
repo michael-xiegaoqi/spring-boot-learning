@@ -1060,3 +1060,19 @@ Caused by: java.lang.IllegalArgumentException: Could not resolve placeholder 'sp
 2017-04-07 11:14:24.379  INFO 91059 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
 2017-04-07 11:19:24.403  INFO 91059 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
 2017-04-07 11:24:24.440  INFO 91059 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2017-04-07 11:29:24.465  INFO 91059 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2017-04-07 11:34:24.473  INFO 91059 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2017-04-07 11:34:41.095  INFO 91059 --- [RMI TCP Connection(2)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2017-04-07 11:34:41.105  INFO 91059 --- [RMI TCP Connection(2)-127.0.0.1] ationConfigEmbeddedWebApplicationContext : Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@6f0b0a5e: startup date [Fri Apr 07 11:09:15 CST 2017]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@6da21078
+2017-04-07 11:34:41.106  INFO 91059 --- [RMI TCP Connection(2)-127.0.0.1] c.n.e.EurekaDiscoveryClientConfiguration : Unregistering application userCenter with eureka with status DOWN
+2017-04-07 11:34:41.107  WARN 91059 --- [RMI TCP Connection(2)-127.0.0.1] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1491536081107, current=DOWN, previous=UP]
+2017-04-07 11:34:41.107  INFO 91059 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_USERCENTER/192.168.1.224:userCenter:8061: registering service...
+2017-04-07 11:34:41.107  INFO 91059 --- [RMI TCP Connection(2)-127.0.0.1] com.netflix.discovery.DiscoveryClient    : Shutting down DiscoveryClient ...
+2017-04-07 11:34:41.108  INFO 91059 --- [RMI TCP Connection(2)-127.0.0.1] com.netflix.discovery.DiscoveryClient    : Unregistering ...
+2017-04-07 11:34:41.117  INFO 91059 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_USERCENTER/192.168.1.224:userCenter:8061 - registration status: 204
+2017-04-07 11:34:41.120  INFO 91059 --- [RMI TCP Connection(2)-127.0.0.1] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_USERCENTER/192.168.1.224:userCenter:8061 - deregister  status: 200
+2017-04-07 11:34:41.124  INFO 91059 --- [RMI TCP Connection(2)-127.0.0.1] com.netflix.discovery.DiscoveryClient    : Completed shut down of DiscoveryClient
+2017-04-07 11:34:41.127  INFO 91059 --- [RMI TCP Connection(2)-127.0.0.1] o.s.c.support.DefaultLifecycleProcessor  : Stopping beans in phase 0
+2017-04-07 11:34:41.132  INFO 91059 --- [RMI TCP Connection(2)-127.0.0.1] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2017-04-07 11:34:41.133  INFO 91059 --- [RMI TCP Connection(2)-127.0.0.1] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans
+2017-04-07 11:34:41.193  INFO 91059 --- [RMI TCP Connection(2)-127.0.0.1] o.apache.catalina.core.StandardService   : Stopping service Tomcat
