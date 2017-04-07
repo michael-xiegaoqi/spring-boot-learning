@@ -26,7 +26,7 @@ public class DruidConfig {
 	private Logger logger = LoggerFactory.getLogger(getClass());
 	
 	//对应配置文件里的配置键
-    public final static String PREFIX="cloud-config"; 
+    public final static String PREFIX="jdbc"; 
 	
 	@Value("${spring.datasource.url}")
 	private String dbUrl;
