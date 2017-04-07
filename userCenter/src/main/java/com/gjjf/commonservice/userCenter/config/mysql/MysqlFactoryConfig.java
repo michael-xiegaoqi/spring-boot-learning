@@ -30,13 +30,13 @@ public class MysqlFactoryConfig {
     private String typeAliasPackage = "com.gjjf.commonservice.userCenter.model";
 
     @Autowired
-    private MysqlConfig druidConfig;
+    private MysqlConfig mysqlConfig;
     
     private DataSource datasource = null;
     
     @Bean(destroyMethod = "close")
 	public DataSource dataSource() {	
-    	datasource = druidConfig.druidDataSource();
+    	datasource = mysqlConfig.druidDataSource();
 		return datasource;
 	}
 

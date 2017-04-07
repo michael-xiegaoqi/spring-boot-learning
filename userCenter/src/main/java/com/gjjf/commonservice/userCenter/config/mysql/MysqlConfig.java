@@ -81,7 +81,7 @@ public class MysqlConfig {
 	public DataSource druidDataSource(){ 
 		DruidDataSource datasource = new DruidDataSource(); 
 	
-		datasource.setUrl(this.dbUrl); 
+		datasource.setUrl(dbUrl); 
 		datasource.setUsername(username); 
 		datasource.setPassword(password); 
 		datasource.setDriverClassName(driverClassName); 

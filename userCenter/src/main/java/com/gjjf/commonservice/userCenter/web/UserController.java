@@ -5,6 +5,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
+import com.gjjf.commonservice.userCenter.Sender.UserSender;
 import com.gjjf.commonservice.userCenter.model.User;
 import com.gjjf.commonservice.userCenter.service.UserService;
 import com.gjjf.framework.rest.Result;
@@ -17,6 +18,8 @@ public class UserController {
     @Autowired
     private UserService userService;
     
+    @Autowired
+    private UserSender userSender;
     
     @RequestMapping(value = "/user/insert", method = RequestMethod.POST)
     public Result insert(UserVO vo) {
@@ -39,6 +42,19 @@ public class UserController {
     	result.setCode(ResultCode.SUCCESS);
     	result.setMessage("获取成功");
     	result.setObject(user);
+    	
+    	return result;
+    	
+    }
+    
+    @RequestMapping(value = "/user/send", method = RequestMethod.GET)
+    public Result send(UserVO vo) {
+        
+    	Result result = new Result();
+    	
+    	userSender.send();
+    	
+    	result.setMessage("消息发送成功");
     	
     	return result;
     	
