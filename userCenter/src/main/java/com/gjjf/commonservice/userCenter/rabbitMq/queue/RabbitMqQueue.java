@@ -1,4 +1,4 @@
-package com.gjjf.commonservice.userCenter.rabbitMq;
+package com.gjjf.commonservice.userCenter.rabbitMq.queue;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

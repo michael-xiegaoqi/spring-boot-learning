@@ -1,0 +1,241 @@
+2017-04-08 00:01:56,919 -- .netflix.discovery.shared.resolver.aws.ConfigClusterResolver [ 43] -- Resolving eureka endpoints via configuration
+2017-04-08 00:06:56,938 -- .netflix.discovery.shared.resolver.aws.ConfigClusterResolver [ 43] -- Resolving eureka endpoints via configuration
+2017-04-08 00:11:56,949 -- .netflix.discovery.shared.resolver.aws.ConfigClusterResolver [ 43] -- Resolving eureka endpoints via configuration
+2017-04-08 00:16:56,963 -- .netflix.discovery.shared.resolver.aws.ConfigClusterResolver [ 43] -- Resolving eureka endpoints via configuration
+2017-04-08 00:21:56,973 -- .netflix.discovery.shared.resolver.aws.ConfigClusterResolver [ 43] -- Resolving eureka endpoints via configuration
+2017-04-08 00:26:56,983 -- .netflix.discovery.shared.resolver.aws.ConfigClusterResolver [ 43] -- Resolving eureka endpoints via configuration
+2017-04-08 00:31:57,000 -- .netflix.discovery.shared.resolver.aws.ConfigClusterResolver [ 43] -- Resolving eureka endpoints via configuration
+2017-04-08 00:34:27,835 -- SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin [125] -- Application shutdown requested.
+2017-04-08 00:34:27,837 -- g.springframework.context.support.AbstractApplicationContext [982] -- Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@78fb9a67: startup date [Fri Apr 07 23:46:48 CST 2017]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@194bcebf
+2017-04-08 00:34:27,842 -- work.cloud.netflix.eureka.EurekaDiscoveryClientConfiguration [128] -- Unregistering application userCenter with eureka with status DOWN
+2017-04-08 00:34:27,844 -- com.netflix.discovery.DiscoveryClient                        [812] -- DiscoveryClient_USERCENTER/192.168.1.103:userCenter:8061: registering service...
+2017-04-08 00:34:27,845 -- com.netflix.discovery.DiscoveryClient                        [869] -- Shutting down DiscoveryClient ...
+2017-04-08 00:34:27,846 -- com.netflix.discovery.DiscoveryClient                        [901] -- Unregistering ...
+2017-04-08 00:34:27,851 -- com.netflix.discovery.DiscoveryClient                        [821] -- DiscoveryClient_USERCENTER/192.168.1.103:userCenter:8061 - registration status: 204
+2017-04-08 00:34:27,853 -- com.netflix.discovery.DiscoveryClient                        [903] -- DiscoveryClient_USERCENTER/192.168.1.103:userCenter:8061 - deregister  status: 200
+2017-04-08 00:34:27,859 -- com.netflix.discovery.DiscoveryClient                        [890] -- Completed shut down of DiscoveryClient
+2017-04-08 00:34:27,870 -- ork.context.support.DefaultLifecycleProcessor$LifecycleGroup [356] -- Stopping beans in phase 2147483647
+2017-04-08 00:34:27,871 -- ork.context.support.DefaultLifecycleProcessor$LifecycleGroup [356] -- Stopping beans in phase 0
+2017-04-08 00:34:27,872 -- ork.context.support.DefaultLifecycleProcessor$LifecycleGroup [356] -- Stopping beans in phase -2147482648
+2017-04-08 00:34:27,877 -- org.springframework.jmx.export.MBeanExporter                 [449] -- Unregistering JMX-exposed beans on shutdown
+2017-04-08 00:34:27,878 -- org.springframework.jmx.support.MBeanRegistrationSupport     [241] -- Unregistering JMX-exposed beans
+2017-04-08 00:34:27,880 -- org.springframework.jmx.export.MBeanExporter                 [449] -- Unregistering JMX-exposed beans on shutdown
+2017-04-08 00:34:27,880 -- org.springframework.jmx.support.MBeanRegistrationSupport     [241] -- Unregistering JMX-exposed beans
+2017-04-08 00:34:27,942 -- org.apache.juli.logging.DirectJDKLog                         [179] -- Stopping service Tomcat
+2017-04-08 00:34:27,948 -- org.apache.juli.logging.DirectJDKLog                         [179] -- Destroying Spring FrameworkServlet 'dispatcherServlet'
+2017-04-08 00:35:05,766 -- ework.cloud.config.client.ConfigServicePropertySourceLocator [ 80] -- Fetching config from server at: http://localhost:7001/
+2017-04-08 00:35:06,701 -- ework.cloud.config.client.ConfigServicePropertySourceLocator [ 94] -- Located environment: name=jdbc,redis,rabbitmq, profiles=[dev], label=null, version=null, state=null
+2017-04-08 00:35:06,702 -- .cloud.bootstrap.config.PropertySourceBootstrapConfiguration [ 93] -- Located property source: CompositePropertySource [name='configService', propertySources=[MapPropertySource [name='classpath:/rabbitmq-dev.properties'], MapPropertySource [name='classpath:/redis-dev.properties'], MapPropertySource [name='classpath:/jdbc-dev.properties']]]
+2017-04-08 00:35:06,823 -- org.springframework.boot.SpringApplication                   [665] -- The following profiles are active: dev
+2017-04-08 00:35:06,880 -- g.springframework.context.support.AbstractApplicationContext [581] -- Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@78fb9a67: startup date [Sat Apr 08 00:35:06 CST 2017]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@194bcebf
+2017-04-08 00:35:10,253 -- ework.data.repository.config.RepositoryConfigurationDelegate [170] -- Multiple Spring Data modules found, entering strict repository configuration mode!
+2017-04-08 00:35:10,859 -- org.springframework.cloud.context.scope.GenericScope         [263] -- BeanFactory id=07123e46-1267-3257-96cd-07fa4d702138
+2017-04-08 00:35:10,879 -- eans.factory.annotation.AutowiredAnnotationBeanPostProcessor [155] -- JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2017-04-08 00:35:10,948 -- t.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [328] -- Bean 'app' of type [class com.gjjf.commonservice.userCenter.App$$EnhancerBySpringCGLIB$$3120e955] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-04-08 00:35:10,999 -- t.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [328] -- Bean 'org.springframework.amqp.rabbit.annotation.RabbitBootstrapConfiguration' of type [class org.springframework.amqp.rabbit.annotation.RabbitBootstrapConfiguration$$EnhancerBySpringCGLIB$$b109c5e5] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-04-08 00:35:11,148 -- t.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [328] -- Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [class org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$ea9e07b7] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-04-08 00:35:11,224 -- t.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [328] -- Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [class org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$6b80ab4] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-04-08 00:35:11,735 -- .boot.context.embedded.tomcat.TomcatEmbeddedServletContainer [ 87] -- Tomcat initialized with port(s): 8061 (http)
+2017-04-08 00:35:11,753 -- org.apache.juli.logging.DirectJDKLog                         [179] -- Starting service Tomcat
+2017-04-08 00:35:11,755 -- org.apache.juli.logging.DirectJDKLog                         [179] -- Starting Servlet Engine: Apache Tomcat/8.5.5
+2017-04-08 00:35:12,116 -- org.apache.juli.logging.DirectJDKLog                         [179] -- Initializing Spring embedded WebApplicationContext
+2017-04-08 00:35:12,117 -- ramework.boot.context.embedded.EmbeddedWebApplicationContext [276] -- Root WebApplicationContext: initialization completed in 5237 ms
+2017-04-08 00:35:12,690 -- org.springframework.boot.web.servlet.ServletRegistrationBean [190] -- Mapping servlet: 'dispatcherServlet' to [/]
+2017-04-08 00:35:12,699 -- ingframework.boot.web.servlet.AbstractFilterRegistrationBean [258] -- Mapping filter: 'metricsFilter' to: [/*]
+2017-04-08 00:35:12,700 -- ingframework.boot.web.servlet.AbstractFilterRegistrationBean [258] -- Mapping filter: 'characterEncodingFilter' to: [/*]
+2017-04-08 00:35:12,700 -- ingframework.boot.web.servlet.AbstractFilterRegistrationBean [258] -- Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2017-04-08 00:35:12,700 -- ingframework.boot.web.servlet.AbstractFilterRegistrationBean [258] -- Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2017-04-08 00:35:12,700 -- ingframework.boot.web.servlet.AbstractFilterRegistrationBean [258] -- Mapping filter: 'requestContextFilter' to: [/*]
+2017-04-08 00:35:12,701 -- ingframework.boot.web.servlet.AbstractFilterRegistrationBean [258] -- Mapping filter: 'webRequestLoggingFilter' to: [/*]
+2017-04-08 00:35:12,701 -- ingframework.boot.web.servlet.AbstractFilterRegistrationBean [258] -- Mapping filter: 'applicationContextIdFilter' to: [/*]
+2017-04-08 00:35:13,394 -- com.gjjf.commonservice.userCenter.rabbitMq.RabbitMqQueue     [ 31] -- 会员中心消息队列的名称:userCenter
+2017-04-08 00:35:13,409 -- com.gjjf.commonservice.userCenter.rabbitMq.RabbitMqQueue     [ 39] -- 会员信息消息队列的名称:userInfo
+2017-04-08 00:35:14,305 -- b.servlet.mvc.method.annotation.RequestMappingHandlerAdapter [534] -- Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@78fb9a67: startup date [Sat Apr 08 00:35:06 CST 2017]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@194bcebf
+2017-04-08 00:35:14,461 -- servlet.handler.AbstractHandlerMethodMapping$MappingRegistry [543] -- Mapped "{[/user/get],methods=[GET]}" onto public com.gjjf.framework.rest.Result com.gjjf.commonservice.userCenter.web.UserController.get(java.lang.Long)
+2017-04-08 00:35:14,463 -- servlet.handler.AbstractHandlerMethodMapping$MappingRegistry [543] -- Mapped "{[/user/insert],methods=[POST]}" onto public com.gjjf.framework.rest.Result com.gjjf.commonservice.userCenter.web.UserController.insert(com.gjjf.userCenter.common.vo.user.UserVO)
+2017-04-08 00:35:14,464 -- servlet.handler.AbstractHandlerMethodMapping$MappingRegistry [543] -- Mapped "{[/user/send],methods=[GET]}" onto public com.gjjf.framework.rest.Result com.gjjf.commonservice.userCenter.web.UserController.send(com.gjjf.userCenter.common.vo.user.UserVO)
+2017-04-08 00:35:14,469 -- servlet.handler.AbstractHandlerMethodMapping$MappingRegistry [543] -- Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2017-04-08 00:35:14,470 -- servlet.handler.AbstractHandlerMethodMapping$MappingRegistry [543] -- Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2017-04-08 00:35:14,543 -- pringframework.web.servlet.handler.AbstractUrlHandlerMapping [354] -- Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-04-08 00:35:14,544 -- pringframework.web.servlet.handler.AbstractUrlHandlerMapping [354] -- Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-04-08 00:35:14,642 -- pringframework.web.servlet.handler.AbstractUrlHandlerMapping [354] -- Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-04-08 00:35:15,926 -- servlet.handler.AbstractHandlerMethodMapping$MappingRegistry [543] -- Mapped "{[/restart || /restart.json],methods=[POST]}" onto public java.lang.Object org.springframework.cloud.context.restart.RestartMvcEndpoint.invoke()
+2017-04-08 00:35:15,927 -- servlet.handler.AbstractHandlerMethodMapping$MappingRegistry [543] -- Mapped "{[/env],methods=[POST]}" onto public java.lang.Object org.springframework.cloud.context.environment.EnvironmentManagerMvcEndpoint.value(java.util.Map<java.lang.String, java.lang.String>)
+2017-04-08 00:35:15,928 -- servlet.handler.AbstractHandlerMethodMapping$MappingRegistry [543] -- Mapped "{[/env/reset],methods=[POST]}" onto public java.util.Map<java.lang.String, java.lang.Object> org.springframework.cloud.context.environment.EnvironmentManagerMvcEndpoint.reset()
+2017-04-08 00:35:15,930 -- servlet.handler.AbstractHandlerMethodMapping$MappingRegistry [543] -- Mapped "{[/dump || /dump.json],methods=[GET],produces=[application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2017-04-08 00:35:15,931 -- servlet.handler.AbstractHandlerMethodMapping$MappingRegistry [543] -- Mapped "{[/resume || /resume.json],methods=[POST]}" onto public java.lang.Object org.springframework.cloud.endpoint.GenericPostableMvcEndpoint.invoke()
+2017-04-08 00:35:15,932 -- servlet.handler.AbstractHandlerMethodMapping$MappingRegistry [543] -- Mapped "{[/archaius || /archaius.json],methods=[GET],produces=[application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2017-04-08 00:35:15,934 -- servlet.handler.AbstractHandlerMethodMapping$MappingRegistry [543] -- Mapped "{[/env/{name:.*}],methods=[GET],produces=[application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EnvironmentMvcEndpoint.value(java.lang.String)
+2017-04-08 00:35:15,935 -- servlet.handler.AbstractHandlerMethodMapping$MappingRegistry [543] -- Mapped "{[/env || /env.json],methods=[GET],produces=[application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2017-04-08 00:35:15,936 -- servlet.handler.AbstractHandlerMethodMapping$MappingRegistry [543] -- Mapped "{[/info || /info.json],methods=[GET],produces=[application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2017-04-08 00:35:15,937 -- servlet.handler.AbstractHandlerMethodMapping$MappingRegistry [543] -- Mapped "{[/features || /features.json],methods=[GET],produces=[application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2017-04-08 00:35:15,938 -- servlet.handler.AbstractHandlerMethodMapping$MappingRegistry [543] -- Mapped "{[/mappings || /mappings.json],methods=[GET],produces=[application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2017-04-08 00:35:15,940 -- servlet.handler.AbstractHandlerMethodMapping$MappingRegistry [543] -- Mapped "{[/trace || /trace.json],methods=[GET],produces=[application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2017-04-08 00:35:15,941 -- servlet.handler.AbstractHandlerMethodMapping$MappingRegistry [543] -- Mapped "{[/health || /health.json],produces=[application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.HealthMvcEndpoint.invoke(java.security.Principal)
+2017-04-08 00:35:15,942 -- servlet.handler.AbstractHandlerMethodMapping$MappingRegistry [543] -- Mapped "{[/heapdump || /heapdump.json],methods=[GET],produces=[application/octet-stream]}" onto public void org.springframework.boot.actuate.endpoint.mvc.HeapdumpMvcEndpoint.invoke(boolean,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) throws java.io.IOException,javax.servlet.ServletException
+2017-04-08 00:35:15,944 -- servlet.handler.AbstractHandlerMethodMapping$MappingRegistry [543] -- Mapped "{[/refresh || /refresh.json],methods=[POST]}" onto public java.lang.Object org.springframework.cloud.endpoint.GenericPostableMvcEndpoint.invoke()
+2017-04-08 00:35:15,947 -- servlet.handler.AbstractHandlerMethodMapping$MappingRegistry [543] -- Mapped "{[/beans || /beans.json],methods=[GET],produces=[application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2017-04-08 00:35:15,948 -- servlet.handler.AbstractHandlerMethodMapping$MappingRegistry [543] -- Mapped "{[/configprops || /configprops.json],methods=[GET],produces=[application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2017-04-08 00:35:15,948 -- servlet.handler.AbstractHandlerMethodMapping$MappingRegistry [543] -- Mapped "{[/pause || /pause.json],methods=[POST]}" onto public java.lang.Object org.springframework.cloud.endpoint.GenericPostableMvcEndpoint.invoke()
+2017-04-08 00:35:15,950 -- servlet.handler.AbstractHandlerMethodMapping$MappingRegistry [543] -- Mapped "{[/autoconfig || /autoconfig.json],methods=[GET],produces=[application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2017-04-08 00:35:15,951 -- servlet.handler.AbstractHandlerMethodMapping$MappingRegistry [543] -- Mapped "{[/metrics/{name:.*}],methods=[GET],produces=[application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.MetricsMvcEndpoint.value(java.lang.String)
+2017-04-08 00:35:15,952 -- servlet.handler.AbstractHandlerMethodMapping$MappingRegistry [543] -- Mapped "{[/metrics || /metrics.json],methods=[GET],produces=[application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2017-04-08 00:35:16,275 -- org.springframework.ui.freemarker.SpringTemplateLoader       [ 61] -- SpringTemplateLoader for FreeMarker: using resource loader [org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@78fb9a67: startup date [Sat Apr 08 00:35:06 CST 2017]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@194bcebf] and template loader path [classpath:/templates/]
+2017-04-08 00:35:16,277 -- ngframework.web.servlet.view.freemarker.FreeMarkerConfigurer [127] -- ClassTemplateLoader for Spring macros added to FreeMarker configuration
+2017-04-08 00:35:16,758 -- com.netflix.config.sources.URLConfigurationSource            [122] -- To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2017-04-08 00:35:16,780 -- com.netflix.config.sources.URLConfigurationSource            [122] -- To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2017-04-08 00:35:17,175 -- org.springframework.jmx.export.MBeanExporter                 [431] -- Registering beans for JMX exposure on startup
+2017-04-08 00:35:17,176 -- org.springframework.jmx.export.MBeanExporter                 [912] -- Bean with name 'druidDataSource' has been autodetected for JMX exposure
+2017-04-08 00:35:17,193 -- org.springframework.jmx.export.MBeanExporter                 [912] -- Bean with name 'refreshScope' has been autodetected for JMX exposure
+2017-04-08 00:35:17,194 -- org.springframework.jmx.export.MBeanExporter                 [912] -- Bean with name 'environmentManager' has been autodetected for JMX exposure
+2017-04-08 00:35:17,195 -- org.springframework.jmx.export.MBeanExporter                 [912] -- Bean with name 'rabbitConnectionFactory' has been autodetected for JMX exposure
+2017-04-08 00:35:17,198 -- org.springframework.jmx.export.MBeanExporter                 [912] -- Bean with name 'configurationPropertiesRebinder' has been autodetected for JMX exposure
+2017-04-08 00:35:17,199 -- org.springframework.jmx.export.MBeanExporter                 [912] -- Bean with name 'refreshEndpoint' has been autodetected for JMX exposure
+2017-04-08 00:35:17,200 -- org.springframework.jmx.export.MBeanExporter                 [912] -- Bean with name 'restartEndpoint' has been autodetected for JMX exposure
+2017-04-08 00:35:17,211 -- org.springframework.jmx.export.MBeanExporter                 [674] -- Located managed bean 'environmentManager': registering with JMX server as MBean [org.springframework.cloud.context.environment:name=environmentManager,type=EnvironmentManager]
+2017-04-08 00:35:17,251 -- org.springframework.jmx.export.MBeanExporter                 [674] -- Located managed bean 'restartEndpoint': registering with JMX server as MBean [org.springframework.cloud.context.restart:name=restartEndpoint,type=RestartEndpoint]
+2017-04-08 00:35:17,271 -- org.springframework.jmx.export.MBeanExporter                 [674] -- Located managed bean 'refreshScope': registering with JMX server as MBean [org.springframework.cloud.context.scope.refresh:name=refreshScope,type=RefreshScope]
+2017-04-08 00:35:17,353 -- org.springframework.jmx.export.MBeanExporter                 [674] -- Located managed bean 'configurationPropertiesRebinder': registering with JMX server as MBean [org.springframework.cloud.context.properties:name=configurationPropertiesRebinder,context=78fb9a67,type=ConfigurationPropertiesRebinder]
+2017-04-08 00:35:17,358 -- org.springframework.jmx.export.MBeanExporter                 [674] -- Located managed bean 'rabbitConnectionFactory': registering with JMX server as MBean [org.springframework.amqp.rabbit.connection:name=rabbitConnectionFactory,type=CachingConnectionFactory]
+2017-04-08 00:35:17,396 -- org.springframework.jmx.export.MBeanExporter                 [674] -- Located managed bean 'refreshEndpoint': registering with JMX server as MBean [org.springframework.cloud.endpoint:name=refreshEndpoint,type=RefreshEndpoint]
+2017-04-08 00:35:17,399 -- org.springframework.jmx.export.MBeanExporter                 [667] -- Located MBean 'druidDataSource': registering with JMX server as MBean [com.alibaba.druid.pool:name=druidDataSource,type=DruidDataSource]
+2017-04-08 00:35:17,400 -- org.springframework.jmx.export.MBeanExporter                 [431] -- Registering beans for JMX exposure on startup
+2017-04-08 00:35:17,855 -- ork.context.support.DefaultLifecycleProcessor$LifecycleGroup [341] -- Starting beans in phase -2147482648
+2017-04-08 00:35:17,856 -- ork.context.support.DefaultLifecycleProcessor$LifecycleGroup [341] -- Starting beans in phase 0
+2017-04-08 00:35:17,867 -- org.springframework.cloud.netflix.eureka.InstanceInfoFactory [ 70] -- Setting initial instance status as: STARTING
+2017-04-08 00:35:18,114 -- com.netflix.discovery.provider.DiscoveryJerseyProvider       [ 70] -- Using JSON encoding codec LegacyJacksonJson
+2017-04-08 00:35:18,115 -- com.netflix.discovery.provider.DiscoveryJerseyProvider       [ 71] -- Using JSON decoding codec LegacyJacksonJson
+2017-04-08 00:35:18,356 -- com.netflix.discovery.provider.DiscoveryJerseyProvider       [ 80] -- Using XML encoding codec XStreamXml
+2017-04-08 00:35:18,356 -- com.netflix.discovery.provider.DiscoveryJerseyProvider       [ 81] -- Using XML decoding codec XStreamXml
+2017-04-08 00:35:18,691 -- .netflix.discovery.shared.resolver.aws.ConfigClusterResolver [ 43] -- Resolving eureka endpoints via configuration
+2017-04-08 00:35:18,719 -- com.netflix.discovery.DiscoveryClient                        [937] -- Disable delta property : false
+2017-04-08 00:35:18,719 -- com.netflix.discovery.DiscoveryClient                        [938] -- Single vip registry refresh property : null
+2017-04-08 00:35:18,719 -- com.netflix.discovery.DiscoveryClient                        [939] -- Force full registry fetch : false
+2017-04-08 00:35:18,720 -- com.netflix.discovery.DiscoveryClient                        [940] -- Application is null : false
+2017-04-08 00:35:18,720 -- com.netflix.discovery.DiscoveryClient                        [941] -- Registered Applications size is zero : true
+2017-04-08 00:35:18,720 -- com.netflix.discovery.DiscoveryClient                        [943] -- Application version is -1: true
+2017-04-08 00:35:18,721 -- com.netflix.discovery.DiscoveryClient                        [1026] -- Getting all instance registry info from the eureka server
+2017-04-08 00:35:18,905 -- com.netflix.discovery.DiscoveryClient                        [1035] -- The response status is 200
+2017-04-08 00:35:18,910 -- com.netflix.discovery.DiscoveryClient                        [1261] -- Starting heartbeat executor: renew interval is: 30
+2017-04-08 00:35:18,919 -- com.netflix.discovery.InstanceInfoReplicator                 [ 59] -- InstanceInfoReplicator onDemand update allowed rate per min is 4
+2017-04-08 00:35:18,924 -- com.netflix.discovery.DiscoveryClient                        [461] -- Discovery Client initialized at timestamp 1491582918923 with initial instances count: 1
+2017-04-08 00:35:18,967 -- work.cloud.netflix.eureka.EurekaDiscoveryClientConfiguration [100] -- Registering application userCenter with eureka with status UP
+2017-04-08 00:35:18,968 -- com.netflix.discovery.DiscoveryClient$3                      [1296] -- Saw local status change event StatusChangeEvent [timestamp=1491582918968, current=UP, previous=STARTING]
+2017-04-08 00:35:18,971 -- com.netflix.discovery.DiscoveryClient                        [812] -- DiscoveryClient_USERCENTER/192.168.1.103:userCenter:8061: registering service...
+2017-04-08 00:35:18,999 -- org.springframework.jmx.export.MBeanExporter                 [674] -- Located managed bean 'featuresEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=featuresEndpoint]
+2017-04-08 00:35:19,021 -- org.springframework.jmx.export.MBeanExporter                 [674] -- Located managed bean 'requestMappingEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=requestMappingEndpoint]
+2017-04-08 00:35:19,031 -- org.springframework.jmx.export.MBeanExporter                 [674] -- Located managed bean 'environmentEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=environmentEndpoint]
+2017-04-08 00:35:19,039 -- org.springframework.jmx.export.MBeanExporter                 [674] -- Located managed bean 'healthEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=healthEndpoint]
+2017-04-08 00:35:19,042 -- org.springframework.jmx.export.MBeanExporter                 [674] -- Located managed bean 'beansEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=beansEndpoint]
+2017-04-08 00:35:19,046 -- org.springframework.jmx.export.MBeanExporter                 [674] -- Located managed bean 'infoEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=infoEndpoint]
+2017-04-08 00:35:19,053 -- com.netflix.discovery.DiscoveryClient                        [821] -- DiscoveryClient_USERCENTER/192.168.1.103:userCenter:8061 - registration status: 204
+2017-04-08 00:35:19,061 -- org.springframework.jmx.export.MBeanExporter                 [674] -- Located managed bean 'metricsEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=metricsEndpoint]
+2017-04-08 00:35:19,064 -- org.springframework.jmx.export.MBeanExporter                 [674] -- Located managed bean 'traceEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=traceEndpoint]
+2017-04-08 00:35:19,072 -- org.springframework.jmx.export.MBeanExporter                 [674] -- Located managed bean 'dumpEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=dumpEndpoint]
+2017-04-08 00:35:19,075 -- org.springframework.jmx.export.MBeanExporter                 [674] -- Located managed bean 'autoConfigurationReportEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=autoConfigurationReportEndpoint]
+2017-04-08 00:35:19,079 -- org.springframework.jmx.export.MBeanExporter                 [674] -- Located managed bean 'configurationPropertiesReportEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=configurationPropertiesReportEndpoint]
+2017-04-08 00:35:19,082 -- org.springframework.jmx.export.MBeanExporter                 [674] -- Located managed bean 'archaiusEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=archaiusEndpoint]
+2017-04-08 00:35:19,084 -- ork.context.support.DefaultLifecycleProcessor$LifecycleGroup [341] -- Starting beans in phase 2147483647
+2017-04-08 00:35:19,196 -- .boot.context.embedded.tomcat.TomcatEmbeddedServletContainer [185] -- Tomcat started on port(s): 8061 (http)
+2017-04-08 00:35:19,197 -- work.cloud.netflix.eureka.EurekaDiscoveryClientConfiguration [168] -- Updating port to 8061
+2017-04-08 00:35:19,202 -- org.springframework.boot.StartupInfoLogger                   [ 57] -- Started App in 15.669 seconds (JVM running for 16.318)
+2017-04-08 00:39:25,728 -- org.apache.juli.logging.DirectJDKLog                         [179] -- Initializing Spring FrameworkServlet 'dispatcherServlet'
+2017-04-08 00:39:25,729 -- org.springframework.web.servlet.FrameworkServlet             [489] -- FrameworkServlet 'dispatcherServlet': initialization started
+2017-04-08 00:39:25,780 -- org.springframework.web.servlet.FrameworkServlet             [508] -- FrameworkServlet 'dispatcherServlet': initialization completed in 51 ms
+2017-04-08 00:39:25,853 -- com.gjjf.commonservice.userCenter.Sender.UserSender          [ 23] -- henser 发送消息...
+2017-04-08 00:39:25,987 -- ngframework.amqp.rabbit.connection.AbstractConnectionFactory [304] -- Created new connection: SimpleConnection@c9c117f [delegate=amqp://guest@127.0.0.1:5672/, localPort= 50591]
+2017-04-08 00:40:18,733 -- .netflix.discovery.shared.resolver.aws.ConfigClusterResolver [ 43] -- Resolving eureka endpoints via configuration
+2017-04-08 13:37:42,092 -- .netflix.discovery.shared.resolver.aws.ConfigClusterResolver [ 43] -- Resolving eureka endpoints via configuration
+2017-04-08 13:42:42,107 -- .netflix.discovery.shared.resolver.aws.ConfigClusterResolver [ 43] -- Resolving eureka endpoints via configuration
+2017-04-08 13:47:42,119 -- .netflix.discovery.shared.resolver.aws.ConfigClusterResolver [ 43] -- Resolving eureka endpoints via configuration
+2017-04-08 13:52:42,130 -- .netflix.discovery.shared.resolver.aws.ConfigClusterResolver [ 43] -- Resolving eureka endpoints via configuration
+2017-04-08 13:57:42,140 -- .netflix.discovery.shared.resolver.aws.ConfigClusterResolver [ 43] -- Resolving eureka endpoints via configuration
+2017-04-08 14:02:42,151 -- .netflix.discovery.shared.resolver.aws.ConfigClusterResolver [ 43] -- Resolving eureka endpoints via configuration
+2017-04-08 16:11:32,662 -- .netflix.discovery.shared.resolver.aws.ConfigClusterResolver [ 43] -- Resolving eureka endpoints via configuration
+2017-04-08 16:16:32,672 -- .netflix.discovery.shared.resolver.aws.ConfigClusterResolver [ 43] -- Resolving eureka endpoints via configuration
+2017-04-08 16:21:32,685 -- .netflix.discovery.shared.resolver.aws.ConfigClusterResolver [ 43] -- Resolving eureka endpoints via configuration
+2017-04-08 16:26:32,696 -- .netflix.discovery.shared.resolver.aws.ConfigClusterResolver [ 43] -- Resolving eureka endpoints via configuration
+2017-04-08 16:31:32,708 -- .netflix.discovery.shared.resolver.aws.ConfigClusterResolver [ 43] -- Resolving eureka endpoints via configuration
+2017-04-08 16:36:32,718 -- .netflix.discovery.shared.resolver.aws.ConfigClusterResolver [ 43] -- Resolving eureka endpoints via configuration
+2017-04-08 16:41:32,730 -- .netflix.discovery.shared.resolver.aws.ConfigClusterResolver [ 43] -- Resolving eureka endpoints via configuration
+2017-04-08 16:46:32,741 -- .netflix.discovery.shared.resolver.aws.ConfigClusterResolver [ 43] -- Resolving eureka endpoints via configuration
+2017-04-08 16:51:32,752 -- .netflix.discovery.shared.resolver.aws.ConfigClusterResolver [ 43] -- Resolving eureka endpoints via configuration
+2017-04-08 16:56:32,764 -- .netflix.discovery.shared.resolver.aws.ConfigClusterResolver [ 43] -- Resolving eureka endpoints via configuration
+2017-04-08 17:01:32,778 -- .netflix.discovery.shared.resolver.aws.ConfigClusterResolver [ 43] -- Resolving eureka endpoints via configuration
+2017-04-08 17:06:32,789 -- .netflix.discovery.shared.resolver.aws.ConfigClusterResolver [ 43] -- Resolving eureka endpoints via configuration
+2017-04-08 17:11:32,801 -- .netflix.discovery.shared.resolver.aws.ConfigClusterResolver [ 43] -- Resolving eureka endpoints via configuration
+2017-04-08 17:16:32,816 -- .netflix.discovery.shared.resolver.aws.ConfigClusterResolver [ 43] -- Resolving eureka endpoints via configuration
+2017-04-08 17:21:32,827 -- .netflix.discovery.shared.resolver.aws.ConfigClusterResolver [ 43] -- Resolving eureka endpoints via configuration
+2017-04-08 17:26:32,839 -- .netflix.discovery.shared.resolver.aws.ConfigClusterResolver [ 43] -- Resolving eureka endpoints via configuration
+2017-04-08 17:31:32,854 -- .netflix.discovery.shared.resolver.aws.ConfigClusterResolver [ 43] -- Resolving eureka endpoints via configuration
+2017-04-08 17:36:32,869 -- .netflix.discovery.shared.resolver.aws.ConfigClusterResolver [ 43] -- Resolving eureka endpoints via configuration
+2017-04-08 17:41:32,881 -- .netflix.discovery.shared.resolver.aws.ConfigClusterResolver [ 43] -- Resolving eureka endpoints via configuration
+2017-04-08 17:46:32,896 -- .netflix.discovery.shared.resolver.aws.ConfigClusterResolver [ 43] -- Resolving eureka endpoints via configuration
+2017-04-08 17:51:32,911 -- .netflix.discovery.shared.resolver.aws.ConfigClusterResolver [ 43] -- Resolving eureka endpoints via configuration
+2017-04-08 17:56:32,922 -- .netflix.discovery.shared.resolver.aws.ConfigClusterResolver [ 43] -- Resolving eureka endpoints via configuration
+2017-04-08 18:01:32,933 -- .netflix.discovery.shared.resolver.aws.ConfigClusterResolver [ 43] -- Resolving eureka endpoints via configuration
+2017-04-08 18:06:32,944 -- .netflix.discovery.shared.resolver.aws.ConfigClusterResolver [ 43] -- Resolving eureka endpoints via configuration
+2017-04-08 18:11:32,960 -- .netflix.discovery.shared.resolver.aws.ConfigClusterResolver [ 43] -- Resolving eureka endpoints via configuration
+2017-04-08 18:16:32,971 -- .netflix.discovery.shared.resolver.aws.ConfigClusterResolver [ 43] -- Resolving eureka endpoints via configuration
+2017-04-08 18:21:32,982 -- .netflix.discovery.shared.resolver.aws.ConfigClusterResolver [ 43] -- Resolving eureka endpoints via configuration
+2017-04-08 18:26:32,999 -- .netflix.discovery.shared.resolver.aws.ConfigClusterResolver [ 43] -- Resolving eureka endpoints via configuration
+2017-04-08 18:31:33,013 -- .netflix.discovery.shared.resolver.aws.ConfigClusterResolver [ 43] -- Resolving eureka endpoints via configuration
+2017-04-08 18:36:33,025 -- .netflix.discovery.shared.resolver.aws.ConfigClusterResolver [ 43] -- Resolving eureka endpoints via configuration
+2017-04-08 18:41:33,035 -- .netflix.discovery.shared.resolver.aws.ConfigClusterResolver [ 43] -- Resolving eureka endpoints via configuration
+2017-04-08 18:46:33,049 -- .netflix.discovery.shared.resolver.aws.ConfigClusterResolver [ 43] -- Resolving eureka endpoints via configuration
+2017-04-08 18:51:33,064 -- .netflix.discovery.shared.resolver.aws.ConfigClusterResolver [ 43] -- Resolving eureka endpoints via configuration
+2017-04-08 18:56:33,076 -- .netflix.discovery.shared.resolver.aws.ConfigClusterResolver [ 43] -- Resolving eureka endpoints via configuration
+2017-04-08 19:01:33,086 -- .netflix.discovery.shared.resolver.aws.ConfigClusterResolver [ 43] -- Resolving eureka endpoints via configuration
+2017-04-08 19:06:33,097 -- .netflix.discovery.shared.resolver.aws.ConfigClusterResolver [ 43] -- Resolving eureka endpoints via configuration
+2017-04-08 19:11:33,108 -- .netflix.discovery.shared.resolver.aws.ConfigClusterResolver [ 43] -- Resolving eureka endpoints via configuration
+2017-04-08 19:16:33,124 -- .netflix.discovery.shared.resolver.aws.ConfigClusterResolver [ 43] -- Resolving eureka endpoints via configuration
+2017-04-08 19:21:33,138 -- .netflix.discovery.shared.resolver.aws.ConfigClusterResolver [ 43] -- Resolving eureka endpoints via configuration
+2017-04-08 19:26:33,150 -- .netflix.discovery.shared.resolver.aws.ConfigClusterResolver [ 43] -- Resolving eureka endpoints via configuration
+2017-04-08 19:31:33,169 -- .netflix.discovery.shared.resolver.aws.ConfigClusterResolver [ 43] -- Resolving eureka endpoints via configuration
+2017-04-08 19:36:33,181 -- .netflix.discovery.shared.resolver.aws.ConfigClusterResolver [ 43] -- Resolving eureka endpoints via configuration
+2017-04-08 19:41:33,192 -- .netflix.discovery.shared.resolver.aws.ConfigClusterResolver [ 43] -- Resolving eureka endpoints via configuration
+2017-04-08 19:46:33,204 -- .netflix.discovery.shared.resolver.aws.ConfigClusterResolver [ 43] -- Resolving eureka endpoints via configuration
+2017-04-08 19:51:33,216 -- .netflix.discovery.shared.resolver.aws.ConfigClusterResolver [ 43] -- Resolving eureka endpoints via configuration
+2017-04-08 19:56:33,227 -- .netflix.discovery.shared.resolver.aws.ConfigClusterResolver [ 43] -- Resolving eureka endpoints via configuration
+2017-04-08 20:01:33,242 -- .netflix.discovery.shared.resolver.aws.ConfigClusterResolver [ 43] -- Resolving eureka endpoints via configuration
+2017-04-08 20:06:33,257 -- .netflix.discovery.shared.resolver.aws.ConfigClusterResolver [ 43] -- Resolving eureka endpoints via configuration
+2017-04-08 20:11:33,269 -- .netflix.discovery.shared.resolver.aws.ConfigClusterResolver [ 43] -- Resolving eureka endpoints via configuration
+2017-04-08 20:16:33,280 -- .netflix.discovery.shared.resolver.aws.ConfigClusterResolver [ 43] -- Resolving eureka endpoints via configuration
+2017-04-08 20:21:33,294 -- .netflix.discovery.shared.resolver.aws.ConfigClusterResolver [ 43] -- Resolving eureka endpoints via configuration
+2017-04-08 20:26:33,309 -- .netflix.discovery.shared.resolver.aws.ConfigClusterResolver [ 43] -- Resolving eureka endpoints via configuration
+2017-04-08 20:31:33,322 -- .netflix.discovery.shared.resolver.aws.ConfigClusterResolver [ 43] -- Resolving eureka endpoints via configuration
+2017-04-08 20:36:33,337 -- .netflix.discovery.shared.resolver.aws.ConfigClusterResolver [ 43] -- Resolving eureka endpoints via configuration
+2017-04-08 20:41:33,354 -- .netflix.discovery.shared.resolver.aws.ConfigClusterResolver [ 43] -- Resolving eureka endpoints via configuration
+2017-04-08 20:46:33,364 -- .netflix.discovery.shared.resolver.aws.ConfigClusterResolver [ 43] -- Resolving eureka endpoints via configuration
+2017-04-08 20:51:33,375 -- .netflix.discovery.shared.resolver.aws.ConfigClusterResolver [ 43] -- Resolving eureka endpoints via configuration
+2017-04-08 20:56:33,387 -- .netflix.discovery.shared.resolver.aws.ConfigClusterResolver [ 43] -- Resolving eureka endpoints via configuration
+2017-04-08 21:01:33,401 -- .netflix.discovery.shared.resolver.aws.ConfigClusterResolver [ 43] -- Resolving eureka endpoints via configuration
+2017-04-08 21:06:33,413 -- .netflix.discovery.shared.resolver.aws.ConfigClusterResolver [ 43] -- Resolving eureka endpoints via configuration
+2017-04-08 21:11:33,424 -- .netflix.discovery.shared.resolver.aws.ConfigClusterResolver [ 43] -- Resolving eureka endpoints via configuration
+2017-04-08 21:16:33,436 -- .netflix.discovery.shared.resolver.aws.ConfigClusterResolver [ 43] -- Resolving eureka endpoints via configuration
+2017-04-08 21:21:33,730 -- .netflix.discovery.shared.resolver.aws.ConfigClusterResolver [ 43] -- Resolving eureka endpoints via configuration
+2017-04-08 21:26:33,741 -- .netflix.discovery.shared.resolver.aws.ConfigClusterResolver [ 43] -- Resolving eureka endpoints via configuration
+2017-04-08 21:31:33,754 -- .netflix.discovery.shared.resolver.aws.ConfigClusterResolver [ 43] -- Resolving eureka endpoints via configuration
+2017-04-08 21:36:33,765 -- .netflix.discovery.shared.resolver.aws.ConfigClusterResolver [ 43] -- Resolving eureka endpoints via configuration
+2017-04-08 21:41:33,776 -- .netflix.discovery.shared.resolver.aws.ConfigClusterResolver [ 43] -- Resolving eureka endpoints via configuration
+2017-04-08 22:01:15,036 -- .netflix.discovery.shared.resolver.aws.ConfigClusterResolver [ 43] -- Resolving eureka endpoints via configuration
+2017-04-08 22:06:15,046 -- .netflix.discovery.shared.resolver.aws.ConfigClusterResolver [ 43] -- Resolving eureka endpoints via configuration
+2017-04-08 22:11:15,058 -- .netflix.discovery.shared.resolver.aws.ConfigClusterResolver [ 43] -- Resolving eureka endpoints via configuration
+2017-04-08 22:16:15,069 -- .netflix.discovery.shared.resolver.aws.ConfigClusterResolver [ 43] -- Resolving eureka endpoints via configuration
+2017-04-08 22:21:15,086 -- .netflix.discovery.shared.resolver.aws.ConfigClusterResolver [ 43] -- Resolving eureka endpoints via configuration
+2017-04-08 22:26:15,097 -- .netflix.discovery.shared.resolver.aws.ConfigClusterResolver [ 43] -- Resolving eureka endpoints via configuration
+2017-04-08 22:31:15,113 -- .netflix.discovery.shared.resolver.aws.ConfigClusterResolver [ 43] -- Resolving eureka endpoints via configuration
+2017-04-08 22:36:15,125 -- .netflix.discovery.shared.resolver.aws.ConfigClusterResolver [ 43] -- Resolving eureka endpoints via configuration
+2017-04-08 22:41:15,136 -- .netflix.discovery.shared.resolver.aws.ConfigClusterResolver [ 43] -- Resolving eureka endpoints via configuration
+2017-04-08 22:46:15,147 -- .netflix.discovery.shared.resolver.aws.ConfigClusterResolver [ 43] -- Resolving eureka endpoints via configuration
+2017-04-08 22:51:15,162 -- .netflix.discovery.shared.resolver.aws.ConfigClusterResolver [ 43] -- Resolving eureka endpoints via configuration
+2017-04-08 22:56:15,176 -- .netflix.discovery.shared.resolver.aws.ConfigClusterResolver [ 43] -- Resolving eureka endpoints via configuration
+2017-04-08 23:01:15,185 -- .netflix.discovery.shared.resolver.aws.ConfigClusterResolver [ 43] -- Resolving eureka endpoints via configuration
+2017-04-08 23:21:21,087 -- .netflix.discovery.shared.resolver.aws.ConfigClusterResolver [ 43] -- Resolving eureka endpoints via configuration
+2017-04-08 23:26:21,107 -- .netflix.discovery.shared.resolver.aws.ConfigClusterResolver [ 43] -- Resolving eureka endpoints via configuration
+2017-04-08 23:31:21,120 -- .netflix.discovery.shared.resolver.aws.ConfigClusterResolver [ 43] -- Resolving eureka endpoints via configuration
+2017-04-08 23:36:21,129 -- .netflix.discovery.shared.resolver.aws.ConfigClusterResolver [ 43] -- Resolving eureka endpoints via configuration
+2017-04-08 23:41:21,140 -- .netflix.discovery.shared.resolver.aws.ConfigClusterResolver [ 43] -- Resolving eureka endpoints via configuration
+2017-04-08 23:46:21,151 -- .netflix.discovery.shared.resolver.aws.ConfigClusterResolver [ 43] -- Resolving eureka endpoints via configuration
+2017-04-08 23:51:21,162 -- .netflix.discovery.shared.resolver.aws.ConfigClusterResolver [ 43] -- Resolving eureka endpoints via configuration
+2017-04-08 23:56:21,173 -- .netflix.discovery.shared.resolver.aws.ConfigClusterResolver [ 43] -- Resolving eureka endpoints via configuration

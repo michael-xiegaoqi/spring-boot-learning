@@ -47,6 +47,15 @@ public class UserController {
     	
     }
     
+    @RequestMapping(value = "/user/getUserVO", method = RequestMethod.GET)
+    public UserVO getUserVO(Integer user_id) {
+    	
+    	UserVO user = userService.getUserVO(user_id);
+    	
+    	return user;
+    	
+    }
+    
     @RequestMapping(value = "/user/send", method = RequestMethod.GET)
     public Result send(UserVO vo) {
         

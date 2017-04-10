@@ -1,18 +1,10 @@
 package com.gjjf.commonservice.userCenter.config.rabbitMq;
 
-import java.sql.SQLException;
-
-import javax.sql.DataSource;
-
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.context.properties.ConfigurationProperties;
-import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
-import org.springframework.context.annotation.Primary;
-
-import com.alibaba.druid.pool.DruidDataSource;
 
 /**
  * 读取消息队列配置文件

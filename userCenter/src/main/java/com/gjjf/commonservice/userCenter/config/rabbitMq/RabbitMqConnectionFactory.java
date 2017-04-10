@@ -19,28 +19,28 @@ import org.springframework.context.annotation.Scope;
 @Configuration
 public class RabbitMqConnectionFactory {
 	
-//	private Logger logger = LoggerFactory.getLogger(getClass());
-//	
-//	@Autowired
-//    private RabbitMqConfig rabbitMqConfig;
-//	
-//	@Bean  
-//    public ConnectionFactory connectionFactory() {  
-//        CachingConnectionFactory connectionFactory = new CachingConnectionFactory();  
-//        connectionFactory.setAddresses(rabbitMqConfig.getHost()+":"+rabbitMqConfig.getPort());  
-//        connectionFactory.setUsername(rabbitMqConfig.getUsername());  
-//        connectionFactory.setPassword(rabbitMqConfig.getPassword());  
-//        connectionFactory.setVirtualHost("/");  
-//        connectionFactory.setPublisherConfirms(true); //必须要设置  
-//        return connectionFactory;  
-//    }  
-//	
-//	@Bean  
-//	@Scope(ConfigurableBeanFactory.SCOPE_PROTOTYPE)  
-//	//必须是prototype类型  
-//	public RabbitTemplate rabbitTemplate() {  
-//	    RabbitTemplate template = new RabbitTemplate(connectionFactory());  
-//	    return template;  
-//	} 
+	private Logger logger = LoggerFactory.getLogger(getClass());
+	
+	@Autowired
+    private RabbitMqConfig rabbitMqConfig;
+	
+	@Bean  
+    public ConnectionFactory connectionFactory() {  
+        CachingConnectionFactory connectionFactory = new CachingConnectionFactory();  
+        connectionFactory.setAddresses(rabbitMqConfig.getHost()+":"+rabbitMqConfig.getPort());  
+        connectionFactory.setUsername(rabbitMqConfig.getUsername());  
+        connectionFactory.setPassword(rabbitMqConfig.getPassword());  
+        connectionFactory.setVirtualHost("/");  
+        connectionFactory.setPublisherConfirms(true); //必须要设置  
+        return connectionFactory;  
+    }  
+	
+	@Bean  
+	@Scope(ConfigurableBeanFactory.SCOPE_PROTOTYPE)  
+	//必须是prototype类型  
+	public RabbitTemplate rabbitTemplate() {  
+	    RabbitTemplate template = new RabbitTemplate(connectionFactory());  
+	    return template;  
+	} 
 	
 }

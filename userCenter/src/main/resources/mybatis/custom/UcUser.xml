@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.gjjf.commonservice.userCenter.dao.custom.UserDao">
+	<resultMap id="UcUserResultMap" type="com.gjjf.commonservice.userCenter.model.UcUser" >
+	    <id column="user_id" property="user_id" jdbcType="INTEGER" />
+	    <result column="user_pwd" property="user_pwd" jdbcType="VARCHAR" />
+	    <result column="mmh" property="mmh" jdbcType="VARCHAR" />
+	    <result column="phone" property="phone" jdbcType="VARCHAR" />
+	    <result column="nick_name" property="nick_name" jdbcType="VARCHAR" />
+	    <result column="user_level_id" property="user_level_id" jdbcType="INTEGER" />
+	    <result column="user_photo" property="user_photo" jdbcType="VARCHAR" />
+	    <result column="email" property="email" jdbcType="VARCHAR" />
+	    <result column="birthday" property="birthday" jdbcType="DATE" />
+	    <result column="regist_channel" property="regist_channel" jdbcType="INTEGER" />
+	    <result column="last_consume_time" property="last_consume_time" jdbcType="TIMESTAMP" />
+	    <result column="create_time" property="create_time" jdbcType="TIMESTAMP" />
+	    <result column="status" property="status" jdbcType="INTEGER" />
+	    <result column="status_time" property="status_time" jdbcType="TIMESTAMP" />
+	    <result column="sex" property="sex" jdbcType="INTEGER" />
+	    <result column="last_update_creater" property="last_update_creater" jdbcType="VARCHAR" />
+	    <result column="last_update_time" property="last_update_time" jdbcType="TIMESTAMP" />
+	    <result column="creater" property="creater" jdbcType="VARCHAR" />
+	    <result column="freeze_reason" property="freeze_reason" jdbcType="VARCHAR" />
+	    <result column="tag" property="tag" jdbcType="VARCHAR" />
+	</resultMap>
+	<sql id="UcUser_Column_List" >
+	    user_id, user_pwd, mmh, phone, nick_name, user_level_id, user_photo, email, birthday,
+	    regist_channel, last_consume_time, create_time, status, status_time, sex, last_update_creater,
+	    last_update_time, creater, freeze_reason, tag
+  	</sql>
+  	
+  	<select id="getMemberInfo"  parameterType="int"  resultType="com.gjjf.userCenter.common.vo.user.UserVO" >
+	    select user_id,mmh,phone,nick_name,user_photo,u.user_level_id as user_level_id,email,regist_channel,
+	    date_format(birthday,'%Y-%m-%d') as birthday,u.create_time as create_time,u.status as status,
+	    u.sex as sex,u.user_photo as user_photo,u.tag as tag from uc_user u
+	    where user_id=#{user_id}
+  	</select>
+
+</mapper>
+
+

@@ -7,6 +7,7 @@ import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
 import com.gjjf.commonservice.userCenter.dao.autocode.UserMapper;
+import com.gjjf.commonservice.userCenter.dao.custom.UserDao;
 import com.gjjf.commonservice.userCenter.model.User;
 import com.gjjf.commonservice.userCenter.redis.UserRedisDao;
 import com.gjjf.userCenter.common.vo.user.UserVO;
@@ -22,6 +23,9 @@ public class UserService {
 	
 	@Autowired
 	private UserRedisDao userRedisDao;
+	
+	@Autowired
+	private UserDao userDao;
 	
 	public void insert(UserVO vo){
 		
@@ -45,6 +49,12 @@ public class UserService {
 		userRedisDao.saveUser(user);
 		
 		return user;
+		
+	}
+	
+	public UserVO getUserVO(Integer user_id) {
+		
+		return userDao.getMemberInfo(user_id);
 		
 	}
 	
