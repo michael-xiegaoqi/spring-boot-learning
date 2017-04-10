@@ -3,6 +3,7 @@ package com.gjjf.commonservice.userCenter.service;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
@@ -26,6 +27,9 @@ public class UserService {
 	
 	@Autowired
 	private UserDao userDao;
+	
+	@Value("${from}")
+	private String from;
 	
 	public void insert(UserVO vo){
 		
@@ -58,5 +62,11 @@ public class UserService {
 		
 	}
 	
+	public String testBus() {
+		
+		String str = "测试 消息总线的属性修改值:" + from;
+		
+		return str;
+	}
 
 }

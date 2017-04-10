@@ -91,4 +91,18 @@ public class UserController {
     	
     }
     
+    @ApiOperation(value="消息总线测试", notes="消息总线数据更改测试")
+    @RequestMapping(value = "/user/test", method = RequestMethod.GET)
+    public Result test() {
+        
+    	Result result = new Result();
+    	
+    	result.setObject(userService.testBus());
+    	
+    	result.setMessage("消息总线测试");
+    	
+    	return result;
+    	
+    }
+    
 }
